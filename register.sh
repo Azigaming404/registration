@@ -2,9 +2,9 @@
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- ipinfo.io/ip);
+nama=$(cat /root/namamu)
 IZIN=$( curl -sS https://raw.githubusercontent.com/JurigVPN/izinvps/ipuk/accessmenu | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
+if [ $nama = $IZIN ]; then
 clear
 echo -e "${green}Permission Accepted${NC}"
 else
@@ -15,7 +15,7 @@ echo -e "     Your VPS ${NC}( ${green}$IP${NC} ) ${YELLOW}Has been Banned "
 echo -e "         Buy access permissions for scripts "
 echo -e "                 Contact Admin :"
 
-echo -e "             ${green}Telegram t.me/JurigVPN "
+echo -e "             ${green}Telegram t.me/azigaming404 "
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 exit 0
