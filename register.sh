@@ -85,8 +85,8 @@ add-ip() {
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M ipuk &> /dev/null
-    git remote add origin https://github.com/JurigVPN/izinvps
-    git push -f https://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@github.com/JurigVPN/izinvps.git &> /dev/null
+    git remote add origin https://github.com/Azigaming404/Autoscript-by-azi
+    git push -f https://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@github.com/Azigaming404/Autoscript-by-azi.git &> /dev/null
     rm -rf /root/ipvps
     clear
     echo -e "${CYAN}Succesfully Add IP Address${NC}"
