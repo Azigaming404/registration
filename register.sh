@@ -3,14 +3,14 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 nama=$(cat /root/namamu)
-IZIN=$( curl -sS https://raw.githubusercontent.com/JurigVPN/izinvps/ipuk/accessmenu | grep $MYIP )
+IZIN=$( curl -sS https://raw.githubusercontent.com/Azigaming404/registration/main/reseller.json | grep $namamu )
 if [ $nama = $IZIN ]; then
 clear
 echo -e "${green}Permission Accepted${NC}"
 else
 clear
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "                ${RED}PERMISSION DENIED ! "${NC}
+echo -e "                ${RED}FUCK YOU ! "${NC}
 echo -e "     Your VPS ${NC}( ${green}$IP${NC} ) ${YELLOW}Has been Banned "
 echo -e "         Buy access permissions for scripts "
 echo -e "                 Contact Admin :"
@@ -78,8 +78,8 @@ add-ip() {
     echo "### ${name} $ran ${exp2} ${ip}" >> /root/ipvps/ip
     fi
     cd /root/ipvps
-    git config --global user.email "muhamadhaisyamkhairizmi@gmail.com" &> /dev/null
-    git config --global user.name "JurigVPN" &> /dev/null
+    git config --global user.email "ajip58342@gmail.com" &> /dev/null
+    git config --global user.name "Azigaming404" &> /dev/null
     rm -rf .git &> /dev/null
     git init &> /dev/null
     git add . &> /dev/null
