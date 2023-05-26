@@ -84,7 +84,7 @@ add-ip() {
     git init &> /dev/null
     git add . &> /dev/null
     git commit -m m &> /dev/null
-    git branch -M ipuk &> /dev/null
+    git branch -M main &> /dev/null
     git remote add origin https://github.com/JurigVPN/izinvps
     git push -f https://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@github.com/JurigVPN/izinvps.git &> /dev/null
     rm -rf /root/ipvps
@@ -126,7 +126,7 @@ del-ip() {
     git init &> /dev/null
     git add . &> /dev/null
     git commit -m m &> /dev/null
-    git branch -M ipuk &> /dev/null
+    git branch -M main &> /dev/null
     git remote add origin https://github.com/JurigVPN/izinvps
     git push -f https://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@github.com/JurigVPN/izinvps.git &> /dev/null
     rm -rf /root/ipvps
@@ -163,7 +163,7 @@ renew-ip() {
     git init &> /dev/null
     git add . &> /dev/null
     git commit -m m &> /dev/null
-    git branch -M ipuk &> /dev/null
+    git branch -M main &> /dev/null
     git remote add origin https://github.com/JurigVPN/izinvps
     git push -f https://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@github.com/JurigVPN/izinvps.git &> /dev/null
     rm -rf /root/ipvps
