@@ -3,28 +3,7 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 
-# Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
-echo "memeriksa vps anda"
-sleep 0.5
-CEKEXPIRED () {
-        today=$(date -d +1day +%Y -%m -%d)
-        Exp1=$(curl -sS https://raw.githubusercontent.com/Azigaming404/registration/main/reseller | grep $MYIP | awk '{print $3}')
-        if [[ $today < $Exp1 ]]; then
-        echo "status script aktif.."
-        else
-        echo "SCRIPT ANDA EXPIRED";
-        exit 0
-fi
-}
-IZIN=$(curl -sS https://raw.githubusercontent.com/Azigaming404/registration/main/reseller | awk '{print $4}' | grep $MYIP)
-if [ $MYIP = $IZIN ]; then
-echo "IZIN DI TERIMA!!"
-CEKEXPIRED
-else
-echo "Akses di tolak!! Benget sia hurung!!";
-exit 0
-fi
+
 clear
 [[ ! -f /usr/bin/git ]] && apt install git -y &> /dev/null
 RED='\033[0;31m'
