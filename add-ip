@@ -15,7 +15,7 @@ echo -e "     Your VPS ${NC}( ${green}$IP${NC} ) ${YELLOW}Has been Banned "
 echo -e "         Buy access permissions for scripts "
 echo -e "                 Contact Admin :"
 
-echo -e "             ${green}Telegram t.me/JurigVPN "
+echo -e "             ${green}Telegram t.me/azigaming404 "
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 exit 0
