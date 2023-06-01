@@ -43,10 +43,10 @@ END='\e[0m'
 add-ip() {
     today=`date -d "0 days" +"%Y-%m-%d"`
     ran=$(date +%s)
-    git clone https://github.com/Azigaming404/Autoscript-by-azi.git /root/ipvps/ &> /dev/null
+    git clone https://github.com/Azigaming404/Autoscript-by-azi.git /root/izin/ &> /dev/null
     clear
     read -p "Input IP Address : " ip
-    CLIENT_EXISTS=$(grep -w $ip /root/ipvps/ip | wc -l)
+    CLIENT_EXISTS=$(grep -w $ip /root/izin | wc -l)
     if [[ ${CLIENT_EXISTS} == '1' ]]; then
     echo "IP Already Exist !"
     exit 0
@@ -119,7 +119,7 @@ del-ip() {
     else
     sed -i "/^### $name $oid $exp $ipdel/,/^},{/d" /root/izin
     fi
-    cd /root/ipvps
+    cd /root
     git config --global user.email "ajip58342@gmail.com" &> /dev/null
     git config --global user.name "Azigaming404" &> /dev/null
     rm -rf .git &> /dev/null
